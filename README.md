@@ -31,7 +31,6 @@ Built a classification model to predict infrastructure quality with **95% accura
 The model identifies high-priority countries for EV infrastructure investment, supporting sustainable transportation planning and resource allocation.
 
 ### Files
-- `data_cleaning.py` - Data preprocessing pipeline
 - `ml_week2.py` - Full ML implementation
 - `best_ev_model.pkl` - Trained model for deployment
 - `week2_complete_analysis.csv` - Final results with predictions
