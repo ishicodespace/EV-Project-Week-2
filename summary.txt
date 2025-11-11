@@ -1,0 +1,24 @@
+The concrete improvisations were:  
+
+1.   Fixed the unbalanced data by changing from average (5.77) to median (0.7) as the cutoff, creating equal groups of 33 "Good" and 34 "Poor" countries.
+
+2.  Created three specific features:  
+   - Scaled population (population ÷ 1,000,000)
+   - Raw station count
+   - Stations per person (stations ÷ population)
+
+3.   Compared three different algorithms:  
+   - Random Forest
+   - Logistic Regression  
+   - SVM
+
+4.   Optimized Random Forest   by testing:
+   - 50, 100, or 200 trees
+   - Different tree depths (10, 20, unlimited)
+   - Different split sizes (2, 5, 10 samples)
+
+5.   Found "stations per person"   was 57.7% of the decision, while raw station count was 23.6% and population size was 18.8%.
+
+6.   Saved the trained model   as a .pkl file for reuse.
+
+7.   Generated specific country recommendations   like China, India, Indonesia as top priorities.
