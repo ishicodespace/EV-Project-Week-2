@@ -107,10 +107,10 @@ if hasattr(best_model, 'feature_importances_'):
 
 # 4. SAVE MODEL
 joblib.dump(best_model, 'best_ev_model.pkl')
-print(f"\n💾 Model saved as 'best_ev_model.pkl'")
+print(f"\nModel saved as 'best_ev_model.pkl'")
 
 # 5. BUSINESS RECOMMENDATIONS
-print(f"\n🎯 BUSINESS RECOMMENDATIONS:")
+print(f"\nBUSINESS RECOMMENDATIONS:")
 
 # Predict on all data
 df['predicted_class'] = best_model.predict(X)
@@ -138,4 +138,4 @@ for _, country in success_stories.head(3).iterrows():
 
 # Save final results
 df.to_csv('week2_complete_analysis.csv', index=False)
-print(f"\n✅ Complete analysis saved to 'week2_complete_analysis.csv'")
+print(f"\nComplete analysis saved to 'week2_complete_analysis.csv'")
